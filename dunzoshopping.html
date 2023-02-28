@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dunzo website</title>
+	<link rel="stylesheet" type="text/css" href="dunzoshopping.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/logo-7b2b540792556466133aea6e7c6ae513.png"height="30"width="100"> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+    <a class="nav-link" href="#"><i class="fa-sharp fa-solid fa-location-dot"></i>
+  <button type="button" class="btn btn-" data-bs-toggle="modal" data-bs-target="#myModal">
+    Set location
+  </button>
+</a>
+</ul> 
+
+   
+   <div class=" nav justify-content-center">
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Add Your Location</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <input type="search" name="search" placeholder="search for an area location name"><br>
+        <i class="fa-solid fa-location-crosshairs"></i> use current location<br>
+        <img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/select-location-empty-f4498251f7f489a59aef4af4e7d3b68e.png"height="400"width="400">
+      </div>
+
+      <!-- Modal footer -->
+      </div>
+  </div>
+</div>
+<li class="nav-item">
+          <a class="nav-link">Dunzo partner</a>
+        </li>
+
+          <div class="dropdown">
+  <button class="btn btn- dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Business with dunzo
+  </button>
+  
+  <ul class="dropdown-menu">
+  <li><button class="dropdown-item" type="button">
+          <img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/d4b-header-icon-df3772f5cee5bff5e584ab9a0483283f.png"height="50"width="50">Need dailvery partner<br>
+          sign up on dunzo for business and<br> get your first dailvery free 
+    </button></li>______________________________________________________
+    <li><button class="dropdown-item" type="button">
+      <img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/b2c-merchant-header-icon-81789a2c6528608ea154438a85fe04a5.png"height="50"width="50">
+      Sell product on dunzo<br>
+      Apply to get your products listed on<br> the dunzo app & website
+    </button></li>
+
+  </ul>
+</div>
+        </li>
+          <li class="nav-item">
+           <a class="nav-link"><i class="fa-solid fa-magnifying-glass"></i>search</a>
+        </li>
+                  <li class="nav-item">
+           <a class="nav-link"><i class="fa-solid fa-cart-shopping"></i>cart</a>
+        </li>
+
+           <!-- Button trigger modal -->
+<button type="button" class="btn btn-success rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">
+       sign in
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="exampleModalLabel"> 
+          <img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/signin-icon-9f407f043f3dd9a44fcf83fc92d9bfaf.png"height="50"width="50"></div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>Sign in</h5>
+        <p>Get started with Dunzo</p>
+      </div>
+      <div>* Enter your phone number</div>
+      <div class="row text-start">
+        <div class="col-md-2"><div class="row"><div class="col-md-6 text-end"><i class="fa-solid fa-phone"></i></div><div class="col-md-6">+91</div></div></div>
+        <div class="col-md-10"><input type="number" id="phone" name="phone" placeholder="Mobile number"></div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-9"><a href="#"><div><input type="checkbox" id="terms" name="terms">I accept the Terms of Use & Privacy Policy</div></a></div>
+        <div class="col-md-3"><a href="#"> View T&C<i class="fa-solid fa-chevron-right"></i></a></div>
+      </div>
+      <div class="modal-footer">
+       <button type="button" class="btn btn-success w-100 rounded-pill">Send OTP</button>
+      </div>
+    </div>
+  </div>
+</div>
+</ul>
+</div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="first">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-8 text-start"><img src="paan-1.png">Order Paan items, munchies and much more on our new Dunzo Mo app</div>
+    <div class="col-md-4 pt-3 text-center"><a href="#">Download Dunzo Mo app now<i class="fa-solid fa-chevron-right"></i></a></div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="container">
+<div class="second">
+	<p><span>Home</span> <i class="fa-solid fa-arrow-right"></i> mumbai</p>
+</div>
+</div>
+<div class="container">
+<h2>Mumbai</h2>
+<p>Why step out when you can get everything delivered home with the tap of a button? Mumbai’s favourite delivery app gets you Food, Grocery, Medicine, Pet Supplies, Fruits & Vegetables, Meat & Fish, Health & Wellness, Gifts and Send Packages from one end of the city to the other. From your local kirana stores to your favourite brands, grocery shopping to your forgotten charger, we are always on the move for you. Why worry about your chores, when you can get it all Dun!</p>
+</div>
+<div class="container">
+<div class="row row-cols-1 row-cols-md-4 g-6">
+  <div class="col">
+    <div class="card">
+      <img src="https://ik.imagekit.io/dunzo/home/tr:w-488,h-360_home_icon/operator-FFWUCfzmUzhok89HMYt0ON2Gy5oZECO73gRenPw11HxAeCLBtTBOG8FMqMTe92UOnScOPMUnjYDcaPVxx7wSFJwXJ3kSR3YRsPby4EgC4zW2mVYLc99zuvVh7O2Ppmx2QMQd40UiwYLGhy0OjbMayr.png" class="card-img-top" alt="...">
+</div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://ik.imagekit.io/dunzo/home/tr:w-300,h-200_home_icon/dunzo/icons/newHome/promoBanner/kitImageUrl/largeIcons/default_pnd_secondary2_1613527381240.png" class="card-img-top" alt="...">
+      
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://ik.imagekit.io/dunzo/home/tr:w-300,h-200_home_icon/operator-ABHxCyRo8CLcEMC0YE43zsmH2XHFv3xr6B8Y3tIdBpKE1NBAjyHS4vgJY3T3z8AEascTap9OETFY0CdvpHj70KZSGFNrCxkFVtUugsMRkyV5jVk9XHl164PCPop56VNkdpLhfymH86JkFjMlYYgQHK.jpg" class="card-img-top" alt="...">
+      
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://ik.imagekit.io/dunzo/home/tr:w-300,h-200_home_icon/dunzo/icons/newHome/promoBanner/kitImageUrl/largeIcons/default_fnv_secondary2_1613527515094.png" class="card-img-top" alt="...">
+      
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container">
+<div class="row row-cols-1 row-cols-md-6 g-2">
+  <div class="col"id="img">
+    <div class="card"id="img">
+      <img class="w-50" src="https://ik.imagekit.io/dunzo/home/tr:w-80,h-80_home_icon/icons/R4_Icons/Home/default_meat_tertiary_grid_1609739765849.png" class="card-img-top" alt="...">
+      <p>Meat and fish</p>
+</div>
+  </div>
+  <div class="col">
+    <div class="card"id="img">
+      <img class="w-50" src="https://ik.imagekit.io/dunzo/home/tr:w-80,h-80_home_icon/icons/R4_Icons/Home/default_pets_tertiary_grid_1609739755734.png" class="card-img-top" alt="...">
+      <p>Pet supplies</p>
+      
+    </div>
+  </div>
+  <div class="col">
+    <div class="card"id="img">
+      <img class="w-50" src="https://ik.imagekit.io/dunzo/home/tr:w-80,h-80_home_icon/icons/R4_Icons/Home/paan_grid_1609739855940.png" class="card-img-top" alt="...">
+    <p>Paan shop</p>
+
+    </div>
+  </div>
+  <div class="col">
+    <div class="card"id="img">
+      <img class="w-50" src="https://ik.imagekit.io/dunzo/home/tr:w-80,h-80_home_icon/icons/R4_Icons/Home/default_gifts_tertiary_grid_1613527886275.png" class="card-img-top" alt="...">
+    <p>Gifts and lifestyle</p>
+   </div>
+  </div>
+  <div class="col">
+  </div>
+  <div class="col">
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="thired">
+	<h4>Top picks for you</h4>
+<div class="row row-cols-1 row-cols-md-4 g-4">
+  <div class="col">
+    <div class="card"id="img">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.kShYalDR0rfkTRUB56o3WQHaE7&pid=Api&P=0" class="card-img-top" alt="...">
+      
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://ik.imagekit.io/dunzo/web-assets/images/grocery.jpg?tr=w-488,h-326,cm-pad_resize" class="card-img-top" alt="...">
+      
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://ik.imagekit.io/dunzo/web-assets/images/restaurants.jpg?tr=w-488,h-326,cm-pad_resize" class="card-img-top" alt="...">
+      
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://ik.imagekit.io/dunzo/web-assets/images/send-packages.jpg?tr=w-488,h-326,cm-pad_resize" class="card-img-top" alt="...">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row pt-5">
+  <div class="col-md-5 text-end"id="app">
+    <img class="w-50" src="https://resources.dunzo.com/web-assets/prod/_next/static/images/dunzo-daily-app-preview-7c97560e963bcd173c11c470b2ff63ed.png">
+  </div>
+  <div class="col-md-7 text-center pt-5 my-5" id="mobfirst">
+    <h3>All this from the convenience of your phone.</h3>
+    <p>Download the Dunzo mobile app.</p>
+    <div class="row text-center"id="mobapp">
+      <div class="col-md-6 text-end">
+    <img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/playstore-ee5b43e66d1583a6066423fb42fb69d8.svg">
+  </div>
+<div class="col-md-6 text-start">
+    <img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/appstore-078da620a293bb95473ae21624a55872.svg">
+  </div>
+</div>
+  </div>
+</div>
+
+
+<div class="end">
+<div class="footer">
+  <div class="container">
+    <h5>Areas we deliver to</h5>
+  </div>
+<footer class="bg-light text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+        <div class="text-uppercase"></div>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Airoli</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">BKC</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Bhandup East</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Borivali East- Kulupwadi</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">CBD</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Churchgate</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Dadar West</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Ghatkopar West</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Goregaon West</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">JB Nagar</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Juhu Tara Road</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Kandivali East</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Kanjurmarg East</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Kolshet</a>
+          </li>
+          
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Malabar Hills</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Marol</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Mindspace</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Mysore Colony</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Nerul</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Powai</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Reliance Corporate</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Santacruz East</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Sion</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Thane East</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Turbhe 2</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Vashi RTO 2</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Vikhroli West</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class="text-uppercase mb-0"></div>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Airoli<li>
+        </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Badlapur waterfalls</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Bhandup west</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Boravli west</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Chakala</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Colaba</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Gandhi nagar</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Govandi</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Jogeshwari East</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Juinagar</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Kandivali east-hanuman nagar</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Kanjuemarg west</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">KApar khairne</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Mahape</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Malad east</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Marve</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Mukund east</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">NESCOPandavkada</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Powai-Hiranandani</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Sahar airport</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Santacruz west</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Sion-Koliwada</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Thana west</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Vartak nagar</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Versava</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Vitava Petrol Pump</a>
+          </li>
+         </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class="text-uppercase"> </div>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Antop Hills</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Bandra east</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Bhayandar east</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Borivli west-Gorai</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Chembur</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">D N nagar</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Ghansoli</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Girgao</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Hirandani Estate</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Jogeshweri west</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Kslbadavali</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Lakhandwala-Oshiwara</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Mohim</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Malad west</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Matunga</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Mulund West</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Nariman point</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Parel</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Rabale</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Sakinaka</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Seawoods</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">TATA colony</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Tilak nagar 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Vashi</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Vidya nagar</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Wadala</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class="text-uppercase mb-0"></div>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">BARC</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Belapur</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Borivli east</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Byculla</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Chumbur-Trombay</a>
+          </li>
+                    <li>
+            <a href="#!" class="text-dark text-decoration-none">Dadar east</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Ghatakpur east</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Garegao east</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">IIT pawai</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Juhu</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Kalina</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Kandavli West-Ekta Nagar</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Khar-Bandra West</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Lower Parel</a>
+          </li>
+           <li>
+            <a href="#!" class="text-dark text-decoration-none">Majiwada</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Manpada</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Mazgaon</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Mulund west-R Mall</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Neelam nagar</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Parle east</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Rabale MIDC</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Sanpada</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Sewari</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Tardeo</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Tromboy</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Varshi RTO 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Vikhroli east</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark text-decoration-none">Worli</a>
+          </li>
+         </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+</footer>
+
+
+<div class="footer">
+  <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  
+  <div class="container p-3">
+    <!-- Section: Social media -->
+    <section class="mb-3">
+  <!-- Section: Links -->
+    <section class="">
+
+      <!--Grid row-->
+      <div class="row">
+        <h6>You can’t stop time, but you can save it!</h6>
+        <p>Living in the city, there is never enough time to shop for groceries, pick-up supplies, grab food and wade through traffic on the way back home. How about we take care of all of the above for you? What if we can give you all that time back? Send packages across the city and get everything from food, groceries, medicines and pet supplies delivered right to your doorstep. From any store to your door, just make a list and we’ll make it disappear. Just Dunzo It!</p>
+        <!--Grid column-->
+        <div class="firstimg">
+        <img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/logo-footer-9f5c4da498fff7fcbead38344d855d20.png"height="50"width="50">
+      </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">DUNZO <br></h5>
+        <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white text-decoration-none">About</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none">Contact</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none">Jobs</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none">Dunzo for partner</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none">Dunzo for business</a>
+            </li>
+          </ul>
+        </div>
+
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">SERVICEABLE CITIES</h5>
+           <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white text-decoration-none">Bangalore</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none"> Pune</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none">Gurgaon</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none">Hyderabad</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none">Delhi</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none">Chennai</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none">Mumbai</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">GET IN TOUCH</h5>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white text-decoration-none">Email</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none">Twitter</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none">Facebook</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none">Instagram</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none">Linkedin</a>
+            </li>
+          </ul>
+        </div>
+
+        <!--Grid column-->
+
+      <!--Grid column-->
+
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <div class="footerimg">
+    <img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/footer-mascot-0a94653a7991194aa18773ec353d7fb6.png"height="200"width="200">
+  </div>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+</div>
+</section>
+</div>
+</footer>
+</div>
+</div>
+</div>
+
+
+
+  
+
+</body>
+</html>
